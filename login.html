@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/login.css" />
+    <script src="login.js" type="text/javascript"></script>
+
+    <title>Login</title>
+</head>
+<body>
+    <div id="formulario">
+        <form  name="form"> 
+            <div id="header">
+                <h2>Login</h2>
+            </div>
+            <label class="label" id="emailLabel" name="emailLabel">Email</label>
+                <input class="input" type="email"id="email" name="email" placeholder="Digite seu email" required>
+            <label class="label"id="senhaLabel" name="senhaLabel">Senha</label>
+                <input class="input" type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+            <button id="botaoLogin" onclick="autenticaLogin(); return false" href="produtos.html">Login</button>
+            <div>
+                <h4 id="legendas">Não possui conta? <a id="naoPossuiConta" name="naoPossuiConta" href="cadastro.html">Cadastre-se</a> </h4>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

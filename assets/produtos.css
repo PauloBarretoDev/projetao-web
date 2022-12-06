@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    width: 100%;
+    font-family: inter;
+    text-decoration: none;
+}
+body{
+    background-color: rgb(35, 221, 134);
+    margin: 0;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+#tabela{
+    padding: 20px;
+    margin: auto;
+    width: 60%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 10px rgb(80, 80, 80);
+    border-radius: 8px;
+    border: none;
+}
+#header{
+    text-align: center;
+}
+#tabela{
+    border-radius: 10px;
+    background-color: #fff;
+}
+#tabela thead{
+    background-color: rgb(226, 226, 226);
+}
+table{
+	width: 100%;
+	margin-bottom : .5em;
+    table-layout: fixed;
+
+}
+
+td, th {
+	padding: .7em;
+	margin: 0;
+	border: 0.1px solid #ccc;
+	text-align: center;
+    background-color: rgb(251, 252, 206);
+}
+tr:hover {
+    cursor: pointer;
+}
+th{
+	font-weight: bold;
+	background-color: rgb(51, 228, 148);
+}
+label{
+    font-family: inter;
+    margin: 2px;
+    font-weight: 700;
+}
+input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: inter;
+}
+input:hover{
+    background-color: #f7f1f1;
+}
+#botaoCadastrar{
+    font-family: inter;
+    width:100%;
+    height: 35px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: rgb(24, 173, 104);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#botaoCadastrar:hover{
+    background-color: rgb(8, 133, 74);
+    cursor: pointer;
+}
+
+#botaoEditar{
+    font-family: inter;
+    width:100%;
+    height: 35px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: rgb(68, 71, 231);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+#botaoEditar:hover{
+    cursor: pointer;
+    background-color: rgb(26, 28, 143);
+}
+
+#botaoExcluir{
+    font-family: inter;
+    width:100%;
+    height: 35px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: rgb(236, 20, 20);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+#botaoExcluir:hover{
+    cursor: pointer;
+    background-color: rgb(158, 9, 9);
+}
+#txtCodigo{
+    background-color: #ccc;
+}
+h4{
+    font-weight: 400;
+}

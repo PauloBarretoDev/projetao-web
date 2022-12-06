@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/produtos.css">
+    <script src="produtos.js" type="text/javascript"></script>
+
+    <title>Produtos</title>
+</head>
+<body>
+    <div id="tabela">
+        <div id="tabelaProdutos">
+            <div id="header">
+                <h1 id="titulo">Produtos cadastrados no sistema</h1>
+            </div>
+            <table id="tabelaProduto">
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Produto</th>
+                        <th>Valor</th>
+                        <th>Quantidade</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <br>
+        <hr>
+<div id="cadastroProdutos">
+    <form name="formProdutos">
+        <h2>Adicionar e editar produtos</h2>
+        <h4>Para efetuar edição de um produto clique no produto desejado na tabela</h4>
+        <hr>
+        <label>Código Produto</label>
+        <input type="text" id="txtCodigo" name="txtCodigo" aria-describedby="emailHelp" placeholder="Código" readonly>
+        <label>Nome do produto</label>
+        <input type="text"  id="txtNome" name="txtNome" aria-describedby="emailHelp" placeholder="Digite nome do produto">
+        <label>Valor do produto</label>
+        <input type="text" id="txtValor" name="txtValor" aria-describedby="emailHelp" placeholder="R$ 00,00">
+        <label>Quantidade disponivel do produto</label>
+        <input type="text"  id="txtQuantidade" name="txtQuantidade" aria-describedby="emailHelp" placeholder="0">
+        <button type="button" id="botaoCadastrar"
+                    onclick="cadastroProduto(txtNome.value, txtValor.value, txtQuantidade.value)">
+                Cadastrar Produto
+            </button>
+            <button type="button" id="botaoEditar"class="btn btn-primary btn-lg"
+                onclick="alterarProduto(txtNome.value, txtValor.value, txtQuantidade.value)">
+            Salvar Edição
+            </button>
+            <button type="button" id="botaoExcluir" class="btn btn-primary btn-lg"
+                    onclick="delRegistro()">
+                Excluir Produto
+            </button>
+    </form>
+</div>
+    </div>
+</body>
+</html>
